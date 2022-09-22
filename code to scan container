@@ -1,0 +1,4 @@
+docker scan --accept-license --version
+version: v0.
+git commit: name
+provider: s(1.790.0 (standalone))

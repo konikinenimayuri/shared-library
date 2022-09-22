@@ -1,0 +1,13 @@
+apiVersion: networking.k8s.io/V1beta1
+kind: ingress
+metadata:
+  name: nodeapp-ingress
+  namespace: nodejs
+spec:
+  rules:
+  -host:nodeapp.com
+   http:
+    paths:
+    -backend:
+      servicename: node-app
+      serviceport: 80
